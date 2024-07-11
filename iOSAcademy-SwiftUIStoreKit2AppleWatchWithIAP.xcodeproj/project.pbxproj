@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A620C6852C3FCFC200C08A08 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620C6842C3FCFC200C08A08 /* Store.swift */; };
 		A623B2732C3FBD3C0011E776 /* iOSAcademy_SwiftUIStoreKit2AppleWatchWithIAPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A623B2722C3FBD3C0011E776 /* iOSAcademy_SwiftUIStoreKit2AppleWatchWithIAPApp.swift */; };
 		A623B2752C3FBD3C0011E776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A623B2742C3FBD3C0011E776 /* ContentView.swift */; };
 		A623B2772C3FBD3E0011E776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A623B2762C3FBD3E0011E776 /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A620C6842C3FCFC200C08A08 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A620C6862C3FD56200C08A08 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		A623B26F2C3FBD3C0011E776 /* iOSAcademy-SwiftUIStoreKit2AppleWatchWithIAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSAcademy-SwiftUIStoreKit2AppleWatchWithIAP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A623B2722C3FBD3C0011E776 /* iOSAcademy_SwiftUIStoreKit2AppleWatchWithIAPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAcademy_SwiftUIStoreKit2AppleWatchWithIAPApp.swift; sourceTree = "<group>"; };
 		A623B2742C3FBD3C0011E776 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				A623B2742C3FBD3C0011E776 /* ContentView.swift */,
 				A623B2762C3FBD3E0011E776 /* Assets.xcassets */,
 				A623B2782C3FBD3E0011E776 /* Preview Content */,
+				A620C6842C3FCFC200C08A08 /* Store.swift */,
+				A620C6862C3FD56200C08A08 /* Configuration.storekit */,
 			);
 			path = "iOSAcademy-SwiftUIStoreKit2AppleWatchWithIAP";
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A620C6852C3FCFC200C08A08 /* Store.swift in Sources */,
 				A623B2752C3FBD3C0011E776 /* ContentView.swift in Sources */,
 				A623B2732C3FBD3C0011E776 /* iOSAcademy_SwiftUIStoreKit2AppleWatchWithIAPApp.swift in Sources */,
 			);
