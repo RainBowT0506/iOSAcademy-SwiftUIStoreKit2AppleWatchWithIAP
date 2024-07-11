@@ -15,6 +15,7 @@ struct ContentView: View {
         VStack{
             Image(systemName: "applelogo")
                 .resizable()
+                .aspectRatio(nil,contentMode: .fit)
                 .frame(width: 70,height: 70)
             
             Text("Apple Store")
@@ -25,15 +26,21 @@ struct ContentView: View {
                 .resizable()
                 .aspectRatio(nil,contentMode: .fit)
             
-            Button(action:{
-                viewModel.purchase()
-            }){
-                Text("Buy Now")
-                    .bold()
-                    .foregroundColor(Color.white)
-                    .frame(width: 220,height: 50)
-                    .background(Color.green)
-                    .cornerRadius(8)
+            if let product = viewModel.products.first{
+                Text(product.displayName).padding(.top, 10)
+                Text(product.description).padding(.top, 10)
+                Button(action:{
+                    if viewModel.purchasedIds.isEmpty{
+                        viewModel.purchase()
+                    }
+                }){
+                    Text(viewModel.purchasedIds.isEmpty ? "Buy Now (\(product.price)" : "Purchased")
+                        .bold()
+                        .foregroundColor(Color.white)
+                        .frame(width: 220,height: 50)
+                        .background(viewModel.purchasedIds.isEmpty ? Color.blue : Color.green)
+                        .cornerRadius(8)
+                }.padding(.top, 10)
             }
         }
         .onAppear{
